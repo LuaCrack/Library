@@ -21,30 +21,6 @@ local redzlib = {
 			["Color Theme"] = Color3.fromRGB(51, 153, 153),
 			["Color Text"] = Color3.fromRGB(243, 243, 243),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		},
-		Dark = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(47.5, 47.5, 47.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(40, 40, 40))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(45, 45, 45),
-			["Color Stroke"] = Color3.fromRGB(65, 65, 65),
-			["Color Theme"] = Color3.fromRGB(65, 150, 255),
-			["Color Text"] = Color3.fromRGB(245, 245, 245),
-			["Color Dark Text"] = Color3.fromRGB(190, 190, 190)
-		},
-		Purple = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
-			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-			["Color Theme"] = Color3.fromRGB(150, 0, 255),
-			["Color Text"] = Color3.fromRGB(240, 240, 240),
-			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
 		}
 	},
 	Info = {
@@ -881,7 +857,7 @@ function redzlib:MakeWindow(Configs)
 		})
 		
 		local Screen = InsertTheme(Create("Frame", MainFrame, {
-			BackgroundTransparency = 0.6,
+			BackgroundTransparency = 0.2,
 			Active = true,
 			BackgroundColor3 = Theme["Color Hub 2"],
 			Size = UDim2.new(1, 0, 1, 0),
