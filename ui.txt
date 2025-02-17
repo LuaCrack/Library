@@ -379,8 +379,10 @@ function lib:Window(text, preset, closebind)
         Tab.BorderSizePixel = 0
         Tab.Position = UDim2.new(0.31400001, 0, 0.147, 0)
         Tab.Size = UDim2.new(0, 373, 0, 254)
+        Tab.ChildAdded:Connect(function()
         Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
-        Tab.ScrollBarThickness = 3
+        end)
+        Tab.ScrollBarThickness = 10
         Tab.Visible = false
 
         TabLayout.Name = "TabLayout"
