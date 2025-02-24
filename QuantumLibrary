@@ -30,8 +30,8 @@ local Themes = {
         AcrylicBorder = Color3.fromRGB(50, 0, 100),
         AcrylicGradient = ColorSequence.new(Color3.fromRGB(20, 20, 20), Color3.fromRGB(0, 0, 0)),
     
-        TitleBarLine = Color3.fromRGB(255, 0, 255),
-        Tab = Color3.fromRGB(100, 0, 255),
+        TitleBarLine = Color3.fromRGB(51, 153, 153),
+        Tab = Color3.fromRGB(51, 153, 153),
     
         Element = Color3.fromRGB(60, 60, 60),
         ElementBorder = Color3.fromRGB(80, 80, 80),
