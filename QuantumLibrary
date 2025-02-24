@@ -5837,26 +5837,6 @@ end
 
 local Dragging, DragInput, MousePos, StartPos = false
 
-local Minimizer = New("Frame", {
-    Parent = GUI,
-    Size = MinimizeButton.Size,
-    Position = UDim2.new(0, 20, 0.025, 0),
-    BackgroundTransparency = 1,
-    ZIndex = 999999999,
-}, {
-    New("Frame", {
-        BackgroundColor3 = Color3.fromRGB(0, 0, 0),
-        Size = UDim2.new(1, 0, 1, 0),
-        BackgroundTransparency = 0.5,
-        BorderSizePixel = 0
-    }, {
-        New("UICorner", {
-            CornerRadius = UDim.new(0.25, 0),
-        }),
-        MinimizeButton
-    })
-})
-
 Creator.AddSignal(Minimizer.InputBegan, function(Input)
     if Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch then
         Dragging = true
