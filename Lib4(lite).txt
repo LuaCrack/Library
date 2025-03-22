@@ -584,6 +584,10 @@ function redzlib:MakeWindow(Configs)
 		Rotation = 45
 	})MakeDrag(MainFrame)
 	
+	local UIStroke = Instance.new("UIStroke")
+	UIStroke.Color = Color3.fromRGB(51, 153, 153)
+	UIStroke.Parent = MainFrame
+	
 	local MainCorner = Make("Corner", MainFrame)
 	
 	local Components = Create("Folder", MainFrame, {
