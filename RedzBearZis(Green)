@@ -26,10 +26,10 @@ local bearlib = {
             ["Color Discord Border"] = Color3.fromRGB(255, 255, 255),
             ["Color Profile Border"] = Color3.fromRGB(255, 255,255),
             ["Color Card Border"] = Color3.fromRGB(255, 255, 255),
-            ["Color Toggle On"] = Color3.fromRGB(255, 255, 0),
+            ["Color Toggle On"] = Color3.fromRGB(0, 205, 0),
             ["Color Toggle Off"] = Color3.fromRGB(0, 0, 0),
             ["Color Toggle Knob On"] = Color3.fromRGB(255, 255, 255),
-            ["Color Toggle Knob Off"] = Color3.fromRGB(255, 255, 0),
+            ["Color Toggle Knob Off"] = Color3.fromRGB(0, 205, 0),
             ["Color Toggle Border"] = Color3.fromRGB(255, 255, 255),
             ["Border Thickness"] = 1.5,
             ["UI Border Color"] = Color3.fromRGB(255,255,255),
@@ -757,7 +757,7 @@ function bearlib:MakeWindow(Configs)
         Position = UDim2.new(0, 0, 0.5),
         AnchorPoint = Vector2.new(0, 0.5),
         BackgroundTransparency = 1,
-        Image = "rbxassetid://76571437829227",
+        Image = "rbxassetid://90857911161349",
         ImageColor3 = Theme["Color Text"],
         Name = "MinimizedIcon"
     })
@@ -2691,7 +2691,7 @@ function bearlib:MakeWindow(Configs)
             
             local JoinButton = InsertTheme(Create("TextButton", ButtonContainer, {
                 Size = UDim2.new(1, 0, 1, 0),
-                Text = "Follow Tik Tok",
+                Text = "Copy Link Discord",
                 Font = Enum.Font.GothamBold,
                 TextSize = 13,
                 BackgroundColor3 = Color3.fromRGB(88, 101, 242),
@@ -3038,7 +3038,7 @@ function bearlib:MakeWindow(Configs)
         ToggleButton.Name = "ToggleButton"
         ToggleButton.Size = UDim2.new(0, 50, 0, 50)
         ToggleButton.Position = UDim2.new(0.12, 0, 0.12, 0)
-        ToggleButton.Image = "rbxassetid://108449485047823"
+        ToggleButton.Image = "rbxassetid://90857911161349"
         ToggleButton.BackgroundColor3 = Theme["Color Hub 2"]
         ToggleButton.BackgroundTransparency = 0.2
         ToggleButton.Active = true
@@ -3186,7 +3186,7 @@ local function CreateNotification(Icon, Title, Message, Duration)
     IconImage.Size = UDim2.new(1, 0, 1, 0)
     IconImage.BackgroundTransparency = 1
     IconImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    IconImage.Image = Icon or "rbxassetid://76571437829227"
+    IconImage.Image = Icon or "rbxassetid://90857911161349"
     IconImage.ImageColor3 = Color3.fromRGB(255, 255, 255)
     IconImage.ScaleType = Enum.ScaleType.Fit
     IconImage.BorderSizePixel = 0
@@ -3216,7 +3216,7 @@ local function CreateNotification(Icon, Title, Message, Duration)
     TitleLabel.TextSize = 15
     TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
     TitleLabel.TextYAlignment = Enum.TextYAlignment.Top
-    TitleLabel.Text = Title or "Bear Hub"
+    TitleLabel.Text = Title or "Zis Roblox"
     TitleLabel.ZIndex = 1003
     TitleLabel.TextStrokeTransparency = 0.3
     TitleLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
@@ -3318,9 +3318,9 @@ local function ProcessNotificationQueue()
 end
 
 function bearlib:Notify(Configs)
-    local Title = Configs.Title or Configs[1] or "Bear Hub"
+    local Title = Configs.Title or Configs[1] or "Zis Roblox"
     local Message = Configs.Message or Configs[2] or Configs.Text or ""
-    local Icon = Configs.Icon or "rbxassetid://76571437829227"
+    local Icon = Configs.Icon or "rbxassetid://90857911161349"
     local Duration = Configs.Duration or Configs.Time or 5
     
     table.insert(NotificationQueue, {
